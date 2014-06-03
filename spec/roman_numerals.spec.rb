@@ -1,4 +1,0 @@
-describe RomanNumerals do |
-  
-  
-end
