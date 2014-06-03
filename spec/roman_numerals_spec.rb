@@ -26,4 +26,7 @@ describe RomanNumerals do
   it "should be able to convert 9 to IX" do
     expect(RomanNumerals.convert(9)).to eq("IX")
   end
+  it "should be able to convert 2445 to MMCDXLV" do
+    expect(RomanNumerals.convert(2445)).to eq("MMCDXLV")
+  end 
 end
