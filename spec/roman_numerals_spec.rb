@@ -17,4 +17,13 @@ describe RomanNumerals do
   it "should be able to convert 996 to CMXCVI" do
     expect(RomanNumerals.convert(996)).to eq("CMXCVI")
   end
+  it "should be able to convert 400 to CD" do
+    expect(RomanNumerals.convert(400)).to eq("CD")
+  end
+  it "should be able to convert 40 to XL" do
+    expect(RomanNumerals.convert(40)).to eq("XL")
+  end
+  it "should be able to convert 9 to IX" do
+    expect(RomanNumerals.convert(9)).to eq("IX")
+  end
 end
