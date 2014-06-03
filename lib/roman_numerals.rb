@@ -14,3 +14,6 @@ class RomanNumerals
     roman_numeral
   end
 end
+
+# running the test for 996 without the exceptions will fail, exceptions being, 
+# 400 (CD, not CCCC), 900 (CM not DCCCC), 90 (XC not LXXXX), 4 (IV not IIII)
