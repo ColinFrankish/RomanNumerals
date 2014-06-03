@@ -1,9 +1,16 @@
 class RomanNumerals
-  ROMAN_NUMERALS = {10 => "X", 5 => "V", 1 => "I"}
+  ROMAN_NUMERALS = {1000 => "M",500 => "D",100 => "C", 50 => "L",10 => "X", 5 => "V", 1 => "I"}
 #setting the constant ROMAN_NUMERALS allows you to
 #call it in the method, pass the argument as key, so
 #it will always return the value. 
   def self.convert(number)
-    ROMAN_NUMERALS[number]
+    roman_numeral = ""
+    ROMAN_NUMERALS.each do |key,value|
+      (number / key).times {roman_numeral << value; number -= key}
+#this is like saying 35 / 10 (returns 3) times add the value to the 
+#roman_numeral variable, then reduce the number by the key each time, 
+#repeat till you run out of number! 
+    end
+    roman_numeral
   end
 end
